@@ -17,4 +17,6 @@ jobs:
     - name: njsscan
       id: njsscan
       uses: ajinabraham/njsscan-action@v4
+      with:
+        target: '.'
 ```
