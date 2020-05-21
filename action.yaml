@@ -1,9 +1,6 @@
 name: 'nodejsscan'
 author: 'Ajin Abraham <ajin@opensecurity.in>'
 description: 'njsscan finds insecure code patterns in your node.js applications.'
-runs:
-  using: docker
-  image: Dockerfile
 inputs: 
   args:
     description: |
