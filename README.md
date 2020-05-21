@@ -16,7 +16,7 @@ jobs:
     - uses: actions/checkout@v1
     - name: njsscan
       id: njsscan
-      uses: ajinabraham/njsscan-action@v4
+      uses: ajinabraham/njsscan-action@v5
       with:
         args: '.'
 ```
