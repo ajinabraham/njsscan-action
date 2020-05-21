@@ -1,4 +1,4 @@
-# njsscan Action
+# njsscan action
 njsscan finds insecure code patterns in your node.js applications.
 
 ## Example Usage
