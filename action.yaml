@@ -1,0 +1,31 @@
+name: 'nodejsscan'
+author: 'Ajin Abraham <ajin@opensecurity.in>'
+description: 'njsscan finds insecure code patterns in your node.js applications.'
+runs:
+  using: docker
+  image: Dockerfile
+inputs: 
+  args:
+    description: |
+      optional arguments:
+        -h, --help            show this help message and exit
+        --json                set output format as JSON
+        -o OUTPUT, --output OUTPUT
+                                output filename to save the result
+        --missing-controls    enable missing security controls check
+        -v, --version         show njsscan version
+    required: false
+  targets:
+    description: |
+      Source file(s) or directory(s) to be scanned
+    required: true
+runs:
+  using: docker
+  image: Dockerfile
+  args:
+  - ${{ inputs.args }}
+  env:
+    TARGETS: ${{ inputs.targets }}
+branding:
+  icon: 'code'
+  color: 'green'
