@@ -3,11 +3,15 @@ njsscan finds insecure code patterns in your node.js applications.
 
 ## Example Usage
 
-Add the following file at `.github/workflows/njsscan.yml`:
+Add the following file .github/workflows/njsscan.yml to your node.js repositories in Github to enable njsscan in your CI/CD or DevSecOps pipeline.
 
 ```yaml
 name: njsscan
-on: [pull_request]
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
 jobs:
   njsscan:
     runs-on: ubuntu-latest
@@ -20,3 +24,5 @@ jobs:
       with:
         args: '.'
 ```
+
+For configuration, see: https://github.com/ajinabraham/njsscan#configure-njsscan
