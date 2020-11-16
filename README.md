@@ -18,7 +18,7 @@ jobs:
     name: njsscan check
     steps:
     - name: Checkout the code
-      uses: actions/checkout@v1
+      uses: actions/checkout@v2
     - name: njsscan
       id: njsscan
       uses: ajinabraham/njsscan-action@master
@@ -41,7 +41,7 @@ jobs:
     name: njsscan check
     steps:
     - name: Checkout the code
-      uses: actions/checkout@v1
+      uses: actions/checkout@v2
     - name: njsscan
       id: njsscan
       uses: ajinabraham/njsscan-action@master
