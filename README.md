@@ -38,7 +38,7 @@ on:
 jobs:
   njsscan:
     runs-on: ubuntu-latest
-    name: njsscan check
+    name: njsscan code scanning
     steps:
     - name: Checkout the code
       uses: actions/checkout@v2
