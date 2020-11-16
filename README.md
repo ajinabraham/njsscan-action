@@ -19,7 +19,7 @@ jobs:
     steps:
     - name: Checkout the code
       uses: actions/checkout@v2
-    - name: njsscan
+    - name: nodejsscan scan
       id: njsscan
       uses: ajinabraham/njsscan-action@master
       with:
@@ -42,7 +42,7 @@ jobs:
     steps:
     - name: Checkout the code
       uses: actions/checkout@v2
-    - name: njsscan
+    - name: nodejsscan scan
       id: njsscan
       uses: ajinabraham/njsscan-action@master
       with:
